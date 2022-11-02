@@ -31,7 +31,6 @@
     "format": "prettier --write . --ignore-path .gitignore",
     "lint": "eslint . --ignore-path .gitignore",
     "fix-style": "npm run format && npm run lint -- --fix",
-    "prepare": "cd .. && husky install ./client/.husky",
     "build:client": "npm run build --prefix client",
     "ci:client": "npm ci --prefix client"
   },
