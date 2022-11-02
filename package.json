@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "npm start --prefix server",
-    "build": "npm build --prefix server"
+    "build": "npm build --prefix server",
+    "postinstall": "concurrently \"npm i --prefix server\" \"npm i --prefix client\""
   },
   "repository": {
     "type": "git",
@@ -16,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/fe-jul22-CookieTeam/product_catalog/issues"
   },
-  "homepage": "https://github.com/fe-jul22-CookieTeam/product_catalog#readme"
+  "homepage": "https://github.com/fe-jul22-CookieTeam/product_catalog#readme",
+  "devDependencies": {
+    "concurrently": "^7.5.0"
+  }
 }
